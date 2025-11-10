@@ -1,7 +1,12 @@
-// src/components/ui/theme.ts
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme,  type ThemeConfig } from '@chakra-ui/react';
+
+const config: ThemeConfig = {
+  initialColorMode: "dark",
+  useSystemColorMode: false, // ensures it ignores system preference
+};
 
 const theme = extendTheme({
+  config,
   colors: {
     brand: {
       100: '#f7c948',
