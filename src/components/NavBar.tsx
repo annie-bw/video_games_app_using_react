@@ -1,10 +1,12 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
-import logo from "../assets/logo.jpg"
+import { HStack, Image } from "@chakra-ui/react";
+import logo from "../assets/logo.jpg";
+import ColorModeSwitch from "./ColorModeSwitch";
 const NavBar = () => {
-  return <HStack>
+  return <HStack justifyContent="space-between" padding="10px">
     <Image src={logo} boxSize="60px"/>
-    <Text>Game Hub</Text>
+    <ColorModeSwitch/>
   </HStack>;
+
 };
 
 export default NavBar;
